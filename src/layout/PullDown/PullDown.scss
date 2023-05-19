@@ -1,0 +1,17 @@
+.infinite-scroll {
+    overflow: auto;
+}
+
+#pull {
+    &.padding-header {
+        padding-top: 56px;
+    }
+
+
+    .pull-content {
+        // height: 100%;
+        background-color: transparent;
+        // touch-action: none;
+        // overflow-y: auto;
+    }
+}

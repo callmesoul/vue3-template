@@ -1,0 +1,32 @@
+{
+  "editor.formatOnSave": true, // ctrl + s 自动格式化
+  "editor.codeActionsOnSave": {
+    // 启用 eslint 自动修复
+    "source.fixAll.eslint": true
+  },
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.trailingComma": "none",
+  "i18n-ally.displayLanguage": "zh",
+  "i18n-ally.localesPaths": ["src/languages"],
+  "[scss]": {
+    "editor.defaultFormatter": "michelemelluso.code-beautifier"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sourceLanguage": "zh"
+}
