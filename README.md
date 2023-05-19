@@ -1,4 +1,4 @@
-# ShowV3
+# Vue3 Start Template
 
 - 集成自适应（使用设计稿 px,自动转换 rem）
 - 集成`i18n`国际化多语言配置
