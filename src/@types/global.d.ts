@@ -4,6 +4,8 @@ declare module '*.json' {
 }
 
 interface ObjTypes<T> {
-  [key: string]: T;
-  [key: number]: T;
+  [key: string]: T
+  [key: number]: T
 }
+
+declare interface Window {}
