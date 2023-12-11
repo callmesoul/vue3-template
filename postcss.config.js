@@ -1,8 +1,6 @@
 const env = require('dotenv').config().parsed
 module.exports = {
   plugins: {
-    tailwindcss: {},
-
     // css前缀自动补全
     autoprefixer: {
       overrideBrowserslist: [

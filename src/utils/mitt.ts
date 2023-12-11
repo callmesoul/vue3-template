@@ -1,11 +1,4 @@
 import mitt from 'mitt'
-export const Mitt = new mitt()
+export const Mitt = mitt()
 
-export enum MittEvent {
-  AddBuzz = 'AddBuzz',
-  UpdateBuzz = 'UpdateBuzz',
-  RemoveBuzz = 'RemoveBuzz',
-  FollowUser = 'FollowUser',
-  SellNFT = 'SellNFT',
-  ChangeLoginUser = 'ChangeLoginUser',
-}
+export enum MittEvent {}

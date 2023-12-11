@@ -14,7 +14,6 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import { viteExternalsPlugin } from 'vite-plugin-externals'
 import nodePolyfills from 'rollup-plugin-polyfill-node'
 import basicSsl from '@vitejs/plugin-basic-ssl'
-import { VitePWA } from 'vite-plugin-pwa'
 // import { sentryVitePlugin } from '@sentry/vite-plugin'
 import type { ViteSentryPluginOptions } from 'vite-plugin-sentry'
 import viteSentry from 'vite-plugin-sentry'
@@ -22,11 +21,10 @@ import viteSentry from 'vite-plugin-sentry'
 // dns.setDefaultResultOrder('verbatim')
 const pathSrc = path.resolve(__dirname, 'src')
 
-
 export default ({ mode, command }) => {
   // 加载环境配置文件
   const env = loadEnv(mode, process.cwd())
-  // # sentry 
+  // # sentry
   // const sentryConfig: ViteSentryPluginOptions = {
   //   url: env.VITE_SENTRY_URL,
   //   authToken: env.VITE_SENTRY_AUTH_TOKEN,
@@ -101,63 +99,6 @@ export default ({ mode, command }) => {
         customDomId: '__svg__icons__dom__',
       }),
       viteExternalsPlugin({}),
-      VitePWA({
-        registerType: 'autoUpdate',
-        includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
-        devOptions: {
-          enabled: true,
-          navigateFallbackAllowlist: [/^index.html$/],
-        },
-        manifest: {
-          name: env.VITE_AppName,
-          short_name: env.VITE_AppName,
-          description:env.VITE_AppDescription,
-          theme_color: '#ffffff',
-          icons: [
-            {
-              src: 'pwa-48x48.png',
-              sizes: '48x48',
-              type: 'image/png',
-            },
-            {
-              src: 'pwa-72x72.png',
-              sizes: '72x72',
-              type: 'image/png',
-            },
-            {
-              src: 'pwa-96x96.png',
-              sizes: '96x96',
-              type: 'image/png',
-            },
-            {
-              src: 'pwa-144x144.png',
-              sizes: '144x144',
-              type: 'image/png',
-            },
-            {
-              src: 'pwa-168x168.png',
-              sizes: '168x168',
-              type: 'image/png',
-            },
-            {
-              src: 'pwa-192x192.png',
-              sizes: '192x192',
-              type: 'image/png',
-            },
-            {
-              src: 'pwa-512x512.png',
-              sizes: '512x512',
-              type: 'image/png',
-            },
-            {
-              src: 'pwa-512x512.png',
-              sizes: '512x512',
-              type: 'image/png',
-              purpose: 'any maskable',
-            },
-          ],
-        },
-      }),
       // basicSsl(),
 
       // sentryVitePlugin({

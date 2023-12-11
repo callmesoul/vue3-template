@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory, RouterView } from 'vue-router'
 const NotFoundPage = () => import('@/views/404.vue')
-import { useUserStore } from './stores/user'
 export const routerHistory = createWebHistory()
 export const router = createRouter({
   history: routerHistory,

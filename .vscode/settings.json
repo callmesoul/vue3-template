@@ -1,8 +1,7 @@
 {
   "editor.formatOnSave": true, // ctrl + s 自动格式化
   "editor.codeActionsOnSave": {
-    // 启用 eslint 自动修复
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "prettier.singleQuote": true,
   "prettier.semi": false,

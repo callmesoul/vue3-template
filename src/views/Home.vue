@@ -1,6 +1,7 @@
 <template>
   <div>
-    template
+    vue3 tempalte
+    <ElButton type="primary">a</ElButton>
   </div>
 </template>
 

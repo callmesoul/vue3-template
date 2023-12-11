@@ -3,12 +3,12 @@ import App from './App.vue'
 
 // #Element-plus styles
 import 'normalize.css/normalize.css'
-import 'element-plus/lib/components/loading/style/index'
-import 'element-plus/lib/components/message/style/index'
-import 'element-plus/lib/components/message-box/style/index'
-import 'element-plus/lib/components/overlay/style/index'
-import 'element-plus/lib/components/drawer/style/index'
-import 'element-plus/lib/components/switch/style/index'
+import 'element-plus/es/components/loading/style/index'
+import 'element-plus/es/components/message/style/index'
+import 'element-plus/es/components/message-box/style/index'
+import 'element-plus/es/components/overlay/style/index'
+import 'element-plus/es/components/drawer/style/index'
+import 'element-plus/es/components/switch/style/index'
 import 'element-plus/theme-chalk/dark/css-vars.css'
 import './index.scss'
 
@@ -20,8 +20,7 @@ import './utils/permission' // 路由控制
 import 'virtual:svg-icons-register'
 import Icon from '@/components/Icon/Icon.vue'
 import { createPinia } from 'pinia'
-import { StartSentry } from './utils/sentry'
-import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
+// import { StartSentry } from './utils/sentry'
 
 const app = createApp(App)
 

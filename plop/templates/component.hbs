@@ -1,0 +1,21 @@
+<template>
+    <div>{{setPageName name}}</div>
+</template>
+
+<script setup lang="ts">
+import { ref, nextTick, watch } from 'vue'
+
+defineOptions({
+  name: '{{setPageName name}}'
+})
+
+interface Props {
+  modelValue: string
+}
+const props = withDefaults(defineProps<Props>(), {})
+
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: string): void
+}>()
+
+<style lang="scss" scoped src="./{{getStyleName name}}.scss"></style>
