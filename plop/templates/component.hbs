@@ -17,5 +17,6 @@ const props = withDefaults(defineProps<Props>(), {})
 const emit = defineEmits<{
   (e: 'update:modelValue', value: string): void
 }>()
+</script>
 
 <style lang="scss" scoped src="./{{getStyleName name}}.scss"></style>

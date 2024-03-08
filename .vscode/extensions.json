@@ -11,8 +11,7 @@
     "csstools.postcss",
     "mikestead.dotenv",
     "eamodio.gitlens",
-    "Vue.volar",
-    "vue.vscode-typescript-vue-plugin",
+    "vue.volar",
     "michelemelluso.code-beautifier"
   ]
 }
