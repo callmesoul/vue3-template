@@ -18,7 +18,7 @@
     "dayjs": "^1.11.6",
     "decimal.js-light": "^2.5.1",
     "dotenv": "^16.0.3",
-    "element-plus": "2.4.3",
+    "element-plus": "^2.4.3",
     "mitt": "^3.0.0",
     "normalize.css": "^8.0.1",
     "pinia": "^2.1.7",
